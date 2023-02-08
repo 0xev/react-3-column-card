@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 0.9375rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 42rem;
+  border-radius: 8px;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+li {
+  padding: 2rem;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display";
+  color: hsl(0, 0%, 95%);
+  margin: 1rem 0;
+}
+
+p {
+  font-family: "Lexend Deca";
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 2rem;
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+button {
+  font-family: "Lexend Deca";
+  text-align: center;
+  background-color: hsl(0, 0%, 95%);
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  border: 1px solid hsl(0, 0%, 95%);
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 90rem) {
+  .card {
+    max-width: 90%;
+    margin: 3rem auto;
+  }
+  ul {
+    grid-template: none;
+    grid-template-rows: repeat (3, 1fr);
+  }
+}
